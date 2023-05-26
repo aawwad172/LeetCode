@@ -18,8 +18,6 @@ public:
 
     int maxUncrossedLines(vector<int> &nums1, vector<int> &nums2) {
         vector<vector<int>> solution(nums1.size() + 1, vector<int>(nums2.size() + 1, -1));
-
-
         return solve(nums1.size(), nums2.size(), nums1, nums2, solution);
     }
 };
