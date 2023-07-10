@@ -13,7 +13,7 @@
 #include <iostream>
 class Solution {
 public:
-    int minDepth(TreeNode *root) {
+    int maxDepth(TreeNode* root) {
         if (!root) {
             return 0; // Return 0 for an empty tree
         }
@@ -26,11 +26,11 @@ public:
         int rightDepth = 0;
 
         if (root->left) {
-            leftDepth = minDepth(root->left);
+            leftDepth = maxDepth(root->left);
         }
 
         if (root->right) {
-            rightDepth = minDepth(root->right);
+            rightDepth = maxDepth(root->right);
         }
 
         // Handle missing child nodes
@@ -38,7 +38,6 @@ public:
             return std::max(leftDepth, rightDepth) + 1;
         }
 
-        return std::min(leftDepth, rightDepth) + 1;
+        return std::max(leftDepth, rightDepth) + 1;
     }
 };
-
