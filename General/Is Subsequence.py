@@ -12,4 +12,4 @@ class Solution:
 
 s = "b"
 t = "abc"
-print(Solution.isSubsequence(Solution, s, t))
+print(Solution().isSubsequence(s, t))
