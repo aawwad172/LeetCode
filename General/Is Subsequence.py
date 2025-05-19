@@ -8,8 +8,3 @@ class Solution:
             j += 1
 
         return i == len(s)
-
-
-s = "b"
-t = "abc"
-print(Solution().isSubsequence(s, t))

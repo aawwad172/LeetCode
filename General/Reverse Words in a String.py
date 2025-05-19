@@ -43,9 +43,3 @@ class Solution:
         s = s.strip()
         words = s.split()
         return " ".join(words[::-1])
-
-
-print(Solution().reverseWords("  hello world  "))
-print(Solution().reverseWords("the sky is blue"))
-print(Solution().reverseWords("a good   example"))
-print(Solution().reverseWords("Bob    Loves  Alice  "))
